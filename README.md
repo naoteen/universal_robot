@@ -128,3 +128,19 @@ As MoveIt! seems to have difficulties with finding plans for the UR with full jo
 ```roslaunch ur5_moveit_config moveit_rviz.launch config:=true```
 
 
+## How to set angle for joint limit
+
+Editing  joint limits at ```ur5_joint_limited_robot.urdf.xacro```.
+
+```
+  <!-- arm -->
+  <xacro:ur5_robot prefix="" joint_limited="true"
+    shoulder_pan_lower_limit="${-pi/4.0}" shoulder_pan_upper_limit="${pi/4.0}"
+    shoulder_lift_lower_limit="${-pi}" shoulder_lift_upper_limit="${pi*0.0}"
+    elbow_joint_lower_limit="${-pi*0.0}" elbow_joint_upper_limit="${pi}"
+    wrist_1_lower_limit="${-pi*1.3}" wrist_1_upper_limit="${-pi/3.0}"
+    wrist_2_lower_limit="${-pi}" wrist_2_upper_limit="${pi*0.0}"
+    wrist_3_lower_limit="${-pi}" wrist_3_upper_limit="${pi}"
+    transmission_hw_interface="$(arg transmission_hw_interface)"
+  />
+```
