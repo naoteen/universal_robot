@@ -15,9 +15,7 @@ source $HOME/catkin_ws/devel/setup.bash
 ```
 
 
-## Usage
-
-### Robot environment
+## Robot environment
 
 #### Real
 Don't forget to source the correct setup shell files and use a new terminal for each command!   
@@ -30,13 +28,13 @@ CAUTION:
 Remember that you should always have your hands on the big red button in case there is something in the way or anything unexpected happens.
 
 
-#### Simulation
+### Simulation
 To bring up the simulated robot in Gazebo, run:
 
 ```roslaunch ur_gazebo ur5.launch```
 
 
-### moveit and rviz
+## moveit and rviz
 You can use MoveIt! to control the robot.  
 There exist MoveIt! configuration packages for both robots.  
 
@@ -50,17 +48,6 @@ For starting up RViz with a configuration including the MoveIt! Motion Planning 
 
 NOTE:  
 If you use real robot, ``sim:=false``
-
-
-___Usage with Gazebo Simulation___  
-There are launch files available to bringup a simulated robot - either UR5 or UR10.  
-In the following the commands for the UR5 are given. For the UR10, simply replace the prefix accordingly.
-
-Don't forget to source the correct setup shell files and use a new terminal for each command!   
-
-To bring up the simulated robot in Gazebo, run:
-
-```roslaunch ur_gazebo ur5.launch```
 
 
 
