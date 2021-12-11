@@ -1,5 +1,7 @@
 # Universal Robot
 
+This package is for UR3 and UR5, not for e-series.
+
 ## Installation
 
 ```
