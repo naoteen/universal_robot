@@ -34,7 +34,7 @@ To bring up the simulated robot in Gazebo, run:
 ```roslaunch ur_gazebo ur5.launch```
 
 
-## moveit and rviz
+## Moveit and rviz
 You can use MoveIt! to control the robot.  
 There exist MoveIt! configuration packages for both robots.  
 
@@ -52,17 +52,18 @@ If you use real robot, ``sim:=false``
 
 
 ## Joint limit 
-As MoveIt! seems to have difficulties with finding plans for the UR with full joint limits [-2pi, 2pi], there is a joint_limited version using joint limits restricted to [-pi,pi]. In order to use this joint limited version, simply use the launch file arguments 'limited', i.e.:  
 
-```roslaunch ur_gazebo ur5.launch limited:=true```
+### Unchained ver.
+Default setting is a joint_limited version using joint limits restricted to [-pi,pi]. In order to use this full joint limits [-2pi, 2pi], simply use the launch file arguments 'limited', i.e.:  
 
-```roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch sim:=true limited:=true```
+```roslaunch ur_gazebo ur5.launch limited:=false```
+
+```roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch sim:=true limited:=false```
 
 ```roslaunch ur5_moveit_config moveit_rviz.launch config:=true```
 
 
-## How to set angle for joint limit
-
+### How to set angle for joint limit
 Editing  joint limits at ```ur5_joint_limited_robot.urdf.xacro```.
 
 ```
