@@ -56,8 +56,8 @@ If you use real robot, ``sim:=false``
 
 ## Joint limit 
 
-### Unchained ver.
-Default setting is a joint_limited version using joint limits restricted to [-pi,pi]. In order to use this full joint limits [-2pi, 2pi], simply use the launch file arguments 'limited', i.e.:  
+### Unchained ver. (not recommended)
+Default setting is a joint_limited version using joint limits restricted to [0,pi]. In order to use this full joint limits [-2pi, 2pi], simply use the launch file arguments 'limited', i.e.:  
 
 ```roslaunch ur_gazebo ur5.launch limited:=false```
 
