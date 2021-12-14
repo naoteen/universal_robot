@@ -6,8 +6,9 @@ This package is for UR3 and UR5, not for e-series.
 
 ```
 cd $HOME/catkin_ws/src
+git clone https://github.com/naoteen/Universal_Robots_ROS_Driver
 git clone -b A111 https://github.com/naoteen/universal_robot.git
-cd $HOME/catkin_ws
+cd ..
 
 # building
 catkin_make
@@ -66,7 +67,7 @@ Default setting is a joint_limited version using joint limits restricted to [-pi
 
 
 ### How to set angle for joint limit
-Editing  joint limits at ```ur5_joint_limited_robot.urdf.xacro```.
+Editing  joint limits at ```universal_robot/ur_description/urdf/ur5_joint_limited_robot.urdf.xacro```.
 
 ```
   <!-- arm -->
