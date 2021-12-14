@@ -19,12 +19,12 @@ source $HOME/catkin_ws/devel/setup.bash
 
 ## Robot environment
 
-#### Real
+### Real
 Don't forget to source the correct setup shell files and use a new terminal for each command!   
 
 To bring up the real robot, run:
 
-```roslaunch ur_bringup ur5_bringup.launch robot_ip:=IP_OF_THE_ROBOT [reverse_port:=REVERSE_PORT]```
+```roslaunch ur_robot_driver ur5_bringup.launch robot_ip:=IP_OF_THE_ROBOT [reverse_port:=REVERSE_PORT]```
 
 CAUTION:  
 Remember that you should always have your hands on the big red button in case there is something in the way or anything unexpected happens.
