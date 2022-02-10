@@ -9,6 +9,7 @@ cd $HOME/catkin_ws/src
 git clone https://github.com/naoteen/Universal_Robots_ROS_Driver
 git clone -b A111 https://github.com/naoteen/universal_robot.git
 sudo apt install ros-noetic-moveit
+sudo apt install ros-noetic-$LACKING-SOMETHING
 cd ..
 
 # building
